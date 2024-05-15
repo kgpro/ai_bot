@@ -11,8 +11,12 @@ from selenium.webdriver.common.keys import Keys
 import time
 from bot_backend import *
 
+chrome_driver_address="" # enter chrome driver full adress with forward slashes
+insta_password=""       #write ur account username and password
+insta_username=""
+
 '''-----------STEP : 1 : LOGIN IN THE CHROME--------'''
-serve=Service("C:/Users/gujra/Downloads/chromedriver-win64/chromedriver-win64/chromedriver.exe")
+serve=Service(chrom_driver_address)
 driver=webdriver.Chrome(service=serve)
 
 
@@ -21,9 +25,9 @@ driver.get("https://www.instagram.com/accounts/login/?hl=en")
 time.sleep(7)
 
 username=driver.find_element(By.XPATH,"/html/body/div[2]/div/div/div[2]/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div/div[1]/div/label/input")
-username.send_keys("_miss_igrit_x")
+username.send_keys(insta_username)
 password=driver.find_element( By.XPATH,"/html/body/div[2]/div/div/div[2]/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div/div[2]/div/label/input")
-password.send_keys("Miss_igrit_of_selenium")
+password.send_keys(insta_password)
 password.send_keys(Keys.ENTER)
 print("Take me to the chats in 20 seconds")
 time.sleep(20)
