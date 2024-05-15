@@ -6,6 +6,7 @@ A CHAT BOT NAMED IGRIT
 
 import google.generativeai as genai
 import json
+key="" # write your gemeini api key here
 
 def create_model(api_key):
   """
@@ -61,7 +62,7 @@ def get_message_from_bot(bot, chat_text):
   return response.text
 
 
-# bot=create_model("AIzaSyCETTjHyxppl7DfsocZu_wtUxGfq37huM4")
+# bot=create_model(key)
 # krina=prepare_chat(bot)
 # while True:
 #   message=input("you:-")
