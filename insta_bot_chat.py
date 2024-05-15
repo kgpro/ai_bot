@@ -147,7 +147,7 @@ def do_chats(text):
 
 """----------------execution part----------"""
 
-model=create_model("AIzaSyCETTjHyxppl7DfsocZu_wtUxGfq37huM4")
+model=create_model(key)
 chats_history_file=loadfile("history.json")
 igrit=prepare_chat(model)
 
