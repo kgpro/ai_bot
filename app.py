@@ -273,11 +273,11 @@ def run(x,ai):
 
 var=int(input("developing[1]/execution[2]:-"))
 if var==1:
-    user='kamal.exe'
-    pswd="L0lyp0p"
+    user='id1'
+    pswd="pswd"
 else:
-    user="_miss_igrit_x"
-    pswd="Miss_igrit_of_selenium"
+    user="id2"
+    pswd="pswd"
 
 driver=driver_start() # start the web driver
 
